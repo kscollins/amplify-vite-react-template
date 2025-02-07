@@ -11,7 +11,8 @@ const schema = a.schema({
     .model({
       content: a.string(),
       name: a.string(),
-      environment: a.string(), 
+      environment: a.string(),
+      devChange: a.string(),  
     })
     .authorization((allow) => [allow.publicApiKey()]),
 });
