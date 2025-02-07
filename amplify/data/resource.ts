@@ -12,6 +12,7 @@ const schema = a.schema({
       content: a.string(),
       name: a.string(),
       environment: a.string(),
+      testpush: a.string(),
     })
     .authorization((allow) => [allow.publicApiKey()]),
 });
