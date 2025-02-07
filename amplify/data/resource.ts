@@ -12,7 +12,6 @@ const schema = a.schema({
       content: a.string(),
       name: a.string(),
       environment: a.string(),
-      devChange: a.string(),  
     })
     .authorization((allow) => [allow.publicApiKey()]),
 });
